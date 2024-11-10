@@ -2,26 +2,343 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Playball&display=swap');
+
+
+.bg1{
+  background-image: url('../../public/picture/p1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.haeder{
+background: #7bc8ffd7;
+display: flex;
+height: 3.5rem;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+
+.port{
+  display: flex;
+  align-items: center;
+  margin-left: 3rem;
+  font-size: xx-large;
+  font-weight: bold;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.ul-1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 6rem;
+  font-weight: 600;
+  font-size: large;
+}
+
+/* MainPage */
+.mainPage{
+  display: flex;
+  justify-content: space-around;
+}
+
+.profile{
+  background-image: url('../../public/picture/profile-img.jpg');
+  height: 20rem;
+  width: 20rem;
+  display: flex;
+  justify-content: end;
+  margin-top: 4rem;
+  border-radius: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 0.5rem;
+}
+
+/* side bar for main page*/
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.597); /* Optional: Semi-transparent background */
+  height: 16rem;
+  width: 4rem;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 15rem;
+}
+
+.sidebar-link {
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.sidebar-link:hover {
+  color: #00bcd4;
+}
+
+
+
+
+
+/* hero section */
+.hero-section {
+  background-image: url('../../public/picture/p2.jpg'); /* Set background if needed */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+/* Header text */
+.container {
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+.message {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #a0a0ff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 5px 0;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  position: relative;
+  margin: 15px 0;
+}
+
+.heading::before,
+.heading::after {
+  content: '';
+  position: absolute;
+  width: 120%;
+  height: 2px;
+  background: #a0a0ff;
+  top: -10px;
+  left: -10%;
+}
+
+.heading::after {
+  top: auto;
+  bottom: -10px;
+}
+
+.subheading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #a0a0ff;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-top: 15px;
+}
+
+/* Add neon glow effect */
+.heading, .subheading {
+  color: #fff;
+  text-shadow:
+    0 0 5px #fff,
+    0 0 10px #a0a0ff,
+    0 0 15px #a0a0ff,
+    0 0 20px #00aaff,
+    0 0 25px #00aaff,
+    0 0 30px #00aaff,
+    0 0 35px #00aaff;
+}
+
+
+/* skill */
+.skill-img{
+  background-image: url('../../public/picture/p3.jpg'); 
+  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 105vh;
+    display: flex;
+   
+}
+
+
+.skill-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 1rem; 
+  place-items: center; 
+  width: 100%;
+  max-width: 900px; 
+  margin: auto ; 
+  padding: 8rem;
+}
+.skill-box:hover{
+  box-shadow: 2px 2px 5px 7px rgba(77, 0, 77, 0.819) ;
+}
+
+.skill-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.2); /* semi-transparent white */
+  padding: 1rem 2rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.5); /* border to match design */
+  border-radius: 8px;
+  cursor: pointer;
+  flex-basis: 100%; 
+  width: 200px;
+
+}
+
+
+/* Contact */
+.contact-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: url('/path-to-your-background-image.jpg') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem;
+  margin-bottom: 5rem;
+  width: 100%;
+
+}
+
+.form {
+  background: rgba(255, 255, 255, 0.1); /* Transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px); /* Glassmorphism effect */
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 80%;
+  max-width: 600px;
+  box-shadow: 2px 2px 5px 7px rgba(9, 184, 242, 0.819) ;
+}
+
+.label {
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.input-field::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+.contactImg{
+  background-image: url('../../public/picture/p4.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 120vh;
+  display: flex;
+}
+
+
+/* About page */
+
+ .about-img{
+  background-image: url('../../public/picture/p5.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+
+  display: flex;
+  
+ }
+
+ .about-text{
+  box-shadow: 2px 2px 5px 7px rgba(9, 184, 242, 0.819) ;
+  border-radius: 1.4rem;
+  height: 20rem;
+  width: 38rem;
+  object-fit: contain;
+  background: rgba(73, 72, 72, 0.473);
+  margin: 15rem 22rem;
+  padding: 1.5rem;
+  font-size: x-large;
+  color: #fff;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+  word-spacing: 8px;
+ }
+
+
+
+
+ /* FOOTER PAGE */
+
+.footer {
+ 
+  color: #c9d1d9;background: linear-gradient(to right, #0e0e93, #d7b701);
+  padding: 40px 0;
+  text-align: center;
+  
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.text {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.icon {
+  color: #c9d1d9;
+  font-size: 34px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.icon:hover {
+  color: #58a6ff;
+  transform: scale(1.1);
 }
