@@ -7,7 +7,7 @@ const About = () => {
       <div className="about-img">
         {/* TEXT */}
 
-        <div className="about-text ">
+        <div className="about-text" >
           Hi! I am Hiba Muhammad Dawood, a web developer with expertise in HTML,
           CSS, TypeScript, and Next.js. I am also a passionate UI/UX and graphic
           designer, dedicated to creating engaging, user-centered designs and

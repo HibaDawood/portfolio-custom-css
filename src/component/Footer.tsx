@@ -8,10 +8,10 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="container">
-        <p className="text">
+        <p className="text" >
           © {new Date().getFullYear()} Hiba. All rights reserved.
         </p>
-        <div className="socialIcons">
+        <div className="socialIcons" >
           <a
             href="https://github.com/HibaDawood"
             target="_blank"

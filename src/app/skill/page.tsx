@@ -14,7 +14,7 @@ const page = () => {
   ];
 
   return (
-    <div id="skills" className="skill-img">
+    <div id="skills" className="skill-img" >
       <div className="skill-grid-container">
         {skills.map((skill, index) => (
           <div key={index} className="skill-box">

@@ -7,7 +7,7 @@ export default function Contact() {
       {/* Contact Image */}
       <div className="contactImg">
         {/* skills */}
-        <div className="contact-container">
+        <div className="contact-container" >
           <div className="form">
             <label>Email:</label>
             <input
