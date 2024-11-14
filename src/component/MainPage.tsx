@@ -4,11 +4,13 @@ import { faHome, faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faTools } from '@fortawesome/free-solid-svg-icons';
 
 export default function MainPage() {
+  
   const skills = [
     "HTML", "CSS", "NEXT.JS", 
     "TALWIND CSS", "TYPESCRIPT", "UI/UX", 
-    "WebDeveloper", "MS OFFICE", "ReactJS",
+    "WebDeveloper", "ReactJS", "GraphicsDesigner"
   ];
+  
   return (  
   <div>
  {/* Main background */}

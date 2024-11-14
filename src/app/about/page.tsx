@@ -1,24 +1,23 @@
-import React from 'react'
-import '/src/app/globals.css';
+import React from "react";
+import "/src/app/globals.css";
 
 const About = () => {
   return (
-    <div id='About'>
-
-      
-      <div className='about-img'>
-      
+    <div id="About">
+      <div className="about-img">
         {/* TEXT */}
-        <div className='about-text '>Hello! I am Huzaifa, a passionate web developer 
-          and UI/UX designer dedicated to creating seamless, visually engaging, and user-centered digital 
-          experiences. With a blend of technical expertise and a designers eye for detail, I craft websites 
-          that are not only functional but also visually captivating.</div>
 
-       
+        <div className="about-text ">
+          Hi! I am Hiba Muhammad Dawood, a web developer with expertise in HTML,
+          CSS, TypeScript, and Next.js. I am also a passionate UI/UX and graphic
+          designer, dedicated to creating engaging, user-centered designs and
+          seamless user experiences. I strive to build impactful digital
+          solutions that not only meet client needs but also push creative
+          boundaries.
         </div>
-        
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default About
+export default About;

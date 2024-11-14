@@ -1,8 +1,8 @@
 // components/Footer.jsx
 
-import React from 'react';
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'; 
-import '/src/app/globals.css';
+import React from "react";
+import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import "/src/app/globals.css";
 
 const Footer = () => {
   return (
@@ -13,28 +13,28 @@ const Footer = () => {
         </p>
         <div className="socialIcons">
           <a
-            href="https://github.com/your-github"
+            href="https://github.com/HibaDawood"
             target="_blank"
             rel="noopener noreferrer"
-            className="icon"
+            className="icon icon1"
           >
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/your-linkedin"
+            href="https://www.linkedin.com/in/hiba-m-dawood/"
             target="_blank"
             rel="noopener noreferrer"
-            className="icon"
+            className="icon icon2"
           >
             <FaLinkedin />
           </a>
           <a
-            href="https://twitter.com/your-twitter"
+            href="https://www.instagram.com/chengsong722?igsh=YzljYTk1ODg3Zg=="
             target="_blank"
             rel="noopener noreferrer"
-            className="icon"
+            className="icon icon3"
           >
-            <FaTwitter />
+            <FaInstagram />
           </a>
         </div>
       </div>
